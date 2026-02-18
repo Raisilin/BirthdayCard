@@ -50,7 +50,6 @@ body{
     border-left:140px solid transparent;
     border-right:140px solid transparent;
     border-top:98px solid #ff6fb5;
-
     transform-origin:top;
     z-index:15; /* выше конверта */
     transition:transform 0.6s ease, z-index 0.3s;
@@ -66,8 +65,21 @@ body{
     border-right:140px solid #ff85c1;
     border-bottom:90px solid #ff5ca8;
     border-top:90px solid transparent;
-
     z-index:11;
+    animation: pulse 2s infinite ease-in-out;
+    transform-origin: center; /* центр пульсации */
+}
+
+
+.close{
+    animation: pulse 2s infinite ease-in-out;
+    transform-origin: center; 
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
 }
 
 /* ЛИСТ */
@@ -89,7 +101,14 @@ body{
 .open .flap{
     transform:rotateX(180deg);
     z-index:1; /* ниже конверта */
+    animation: none;
 }
+
+.open .pocket{
+    animation: none;
+
+}
+
 
 .open .letter{
     transform:translateY(-60px);
