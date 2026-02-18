@@ -229,14 +229,16 @@ body{
     z-index:40;
 }
 
-.cat.left{
-  left:10%;
-  top: 13%;
+.cat.left {
+    left: 0;          /* прижать к левому краю */
+    top: 50%;
+    transform: translateY(-150%) translateX(50%);
 }
 
-.cat.right{
-  right:10%;
-  top:15%;
+.cat.right {
+    right: 0;         /* прижать к правому краю */
+    top: 50%;
+    transform: translateY(-150%) translateX(-50%);
 }
 
 .cat2{
