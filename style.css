@@ -318,5 +318,8 @@ footer{
   .time{
     font-size: 18px;
   }
+  .wishlist-btn{
+    width: 100%;
+  }
 }
 
