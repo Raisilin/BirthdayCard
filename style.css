@@ -201,7 +201,7 @@ body{
     position:fixed;
     inset:0;
     overflow:hidden;
-    z-index:1;
+    z-index:-1000;
     pointer-events:none;
 }
 
@@ -286,6 +286,7 @@ footer{
     margin-top:35px;
     font-size:14px;
     color:#ad1457;
+    
 }
 
 /* ================= АДАПТИВ ================= */
